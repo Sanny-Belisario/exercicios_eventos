@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <button>Data</button> -->
+    <input type="text" name="nome" id="nome" placeholder="Informe o nome">
+    <button>Enviar</button>
+    <!-- <button onclick="document.querySelector('#demo').innerHTML=Date()">Data</button>
+
+    <button onclick="this.innerHTML=Date()">Data</button> -->
+</body>
+<script>
+    // let btn=document.querySelector("button")
+    // btn.onclick=function(){
+    //     document.querySelector("#demo").innerHTML=Date()
+    // }
+    let btn=document.querySelector("button")
+    btn.onclick=function(){
+        document.querySelector("#demo").innerHTML=document.querySelector("#nome").value
+        document.querySelector("#nome").value=""
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="azul">Azul</button>
+    <button id="verde">Verde</button>
+    <button id="vermelho">Vermelho</button>
+</body>
+<script>
+    let btnAzul=document.querySelector("#azul")
+    btnAzul.onclick=function(){
+        document.querySelector("body").style.backgroundColor="#00b5ff"
+    }
+    let btnVerde=document.querySelector("#verde")
+    btnVerde.onclick=function(){
+        document.querySelector("body").style.backgroundColor="#2bff00"
+    }
+    let btnVermelho=document.querySelector("#vermelho")
+    btnVermelho.onclick=function(){
+        document.querySelector("body").style.backgroundColor="#ff0000"
+    }
+</script>
+</html>
